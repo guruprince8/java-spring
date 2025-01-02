@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class YoutubeController {
 
-    @GetMapping("/youtube/v1/vidoes/all")
-    public YoutubeResponse fetchAllVidoes (){
+    @GetMapping("/youtube/v1/videos/all")
+    public YoutubeResponse fetchAllVideos (){
         YoutubeResponse youtubeResponse;
         youtubeResponse = new YoutubeResponse();
         return youtubeResponse;
