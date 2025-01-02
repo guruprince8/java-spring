@@ -3,13 +3,14 @@ import java.util.ArrayList;
 import java.util.List;
 public class YoutubeResponse {
 
+    private List<YoutubeVideo> videos;
+
     public YoutubeResponse(){
         videos = new ArrayList<YoutubeVideo>();
         YoutubeVideo youtubeVideo = new YoutubeVideo();
         youtubeVideo.setId("1");youtubeVideo.setSource("videos/drug.mp4");
         videos.add(youtubeVideo);
     }
-    private List<YoutubeVideo> videos;
 
     public List<YoutubeVideo> getVideos() {
         return videos;
